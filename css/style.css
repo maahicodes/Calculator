@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital@1&family=Josefin+Sans:ital,wght@1,500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to top, #f9da98 0%, #d6f5f7 100%);
+}
+
+.calculator {
+  position: relative;
+  display: grid;
+}
+
+.calculator .value {
+  grid-column: span 4;
+  height: 100px;
+  text-align: right;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 28px;
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%); 
+}
+
+.calculator span {
+  display: grid;
+  width: 80px;
+  height: 80px;
+  color: #ffffff;
+  background: #0c2835;
+  place-items: center;
+  font-size: 30px;
+  border: 2px solid rgba(0,0,0,.1);
+}
+
+.calculator span:active {
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  color: black;
+}
+
+.calculator span.clear {
+  grid-column: span 2;
+  width: 160px;
+  color: #f68665;
+  font-size: 40px;
+}
+
+.calculator span.plus{
+  grid-row: span 2;
+  height: 160px;
+}
+
+.calculator span.equals{
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+@media only screen and (max-width: 600px) {
+  .calculator span{
+     border: 1px solid #28353c;
+  }
+}
+
+
+
+
+
+
+
+
+
